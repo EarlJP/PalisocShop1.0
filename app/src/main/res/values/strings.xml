@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">PalisocShop</string>
+    <string name="browse_header">Browse</string>
+    <string name="rydel_racing_bikes">Rydel\'s Racing Bikes</string>
+    <string name="browse">Browse</string>
+    <string name="instruct_msg">Welcome to Mike\'s Mach Bikes! Browse through our catalog and order yourself a brand new bike, tailored and delivered, just for you</string>
 </resources>
