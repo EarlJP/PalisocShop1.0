@@ -12,10 +12,18 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".CheckoutActivity"
-            android:label="@string/app_name"/>
+            android:label="@string/app_name"
+            android:parentActivityName=".MenuActivity">
+            <meta-data
+                android:name="android.support.MENU_ACTIVITY"
+                android:value="com.earljaepal.palisocshop"
+                />
+        </activity>
+
         <activity android:name=".MenuActivity"
             android:label="@string/app_name"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|screenSize">
             <meta-data
                 android:name="android.support.MAIN_ACTIVITY"
                 android:value="com.earljaepal.palisocshop"/>

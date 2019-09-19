@@ -31,7 +31,7 @@
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold" />
 
             <ImageView
@@ -76,9 +76,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
+                    android:padding="@dimen/padding"
                     android:text="@string/quantity"
-                    android:textSize="24sp"
-                    android:padding="@dimen/padding"/>
+                    android:textSize="18sp" />
 
                 <Button
                     android:id="@+id/remove_button"
@@ -88,8 +88,7 @@
                     android:fontFamily="monospace"
                     android:text="@string/remove_button"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:padding="@dimen/padding"/>
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/item3_quantity"
@@ -99,8 +98,7 @@
                     android:fontFamily="monospace"
                     android:text="@string/initial_quantity"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:padding="@dimen/padding"/>
+                    android:textSize="24sp" />
 
                 <Button
                     android:id="@+id/add_button"
@@ -110,8 +108,7 @@
                     android:fontFamily="monospace"
                     android:text="@string/add_button"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:padding="@dimen/padding"/>
+                    android:textSize="24sp" />
 
             </LinearLayout>
 

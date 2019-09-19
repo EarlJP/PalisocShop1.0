@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
+    android:background="#2196F3"
     tools:context=".MainActivity">
 
     <TextView
@@ -18,7 +18,7 @@
         android:fontFamily="monospace"
         android:padding="@dimen/padding"
         android:text="@string/shop_title"
-        android:textAlignment="textStart"
+        android:textAlignment="center"
         android:textAllCaps="true"
         android:textSize="36sp"
         android:textStyle="bold|italic"
@@ -33,23 +33,24 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:fontFamily="monospace"
-        android:text="@string/browse"
+        android:onClick="launchActivityMenu"
         android:padding="@dimen/padding"
+        android:text="@string/browse"
+        android:textAlignment="center"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:onClick="launchActivityMenu"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/instruct_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="monospace"
+        android:padding="@dimen/padding"
         android:text="@string/instruct_msg"
         android:textAlignment="center"
-        android:textSize="30sp"
-        android:padding="@dimen/padding"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
