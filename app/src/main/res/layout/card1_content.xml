@@ -26,6 +26,7 @@
                 android:background="#FFEB3B"
                 android:fontFamily="monospace"
                 android:lineSpacingExtra="12sp"
+                android:padding="@dimen/padding"
                 android:text="@string/item1_name"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
@@ -38,6 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="191dp"
                 android:contentDescription="@string/item1_name"
+                android:padding="@dimen/padding"
                 app:srcCompat="@drawable/mach_bike" />
 
 
@@ -47,6 +49,7 @@
                 android:layout_height="wrap_content"
                 android:background="#FFEB3B"
                 android:fontFamily="monospace"
+                android:padding="@dimen/padding"
                 android:text="@string/item1_price"
                 android:textAlignment="viewStart"
                 android:textSize="30sp" />
@@ -57,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="monospace"
                 android:lineSpacingExtra="4sp"
+                android:padding="@dimen/padding"
                 android:text="@string/item1_description"
                 android:textAlignment="viewStart" />
 
@@ -72,6 +76,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
+                    android:padding="@dimen/padding"
                     android:text="@string/quantity"
                     android:textSize="24sp" />
 
@@ -81,6 +86,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
+                    android:padding="@dimen/padding"
                     android:text="@string/remove_button"
                     android:textAlignment="center"
                     android:textSize="24sp" />
@@ -91,6 +97,7 @@
                     android:layout_height="wrap_content"
                     android:background="#FFEB3B"
                     android:fontFamily="monospace"
+                    android:padding="@dimen/padding"
                     android:text="@string/initial_quantity"
                     android:textAlignment="center"
                     android:textSize="24sp" />
@@ -101,6 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
+                    android:padding="@dimen/padding"
                     android:text="@string/add_button"
                     android:textAlignment="center"
                     android:textSize="24sp" />
@@ -118,6 +126,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
+                    android:padding="@dimen/padding"
                     android:text="@string/subtotal_title"
                     android:textSize="24sp" />
 
@@ -125,7 +134,9 @@
                     android:id="@+id/initial_subtotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
                     android:fontFamily="monospace"
+                    android:padding="@dimen/padding"
                     android:text="@string/initial_subtotal"
                     android:textSize="24sp" />
 

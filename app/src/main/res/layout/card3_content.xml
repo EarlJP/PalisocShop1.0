@@ -31,14 +31,16 @@
                 android:textAllCaps="false"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textSize="30sp"
-                android:textStyle="bold|italic" />
+                android:textStyle="bold|italic"
+                android:padding="@dimen/padding"/>
 
             <ImageView
                 android:id="@+id/item3_image"
                 android:layout_width="match_parent"
                 android:layout_height="191dp"
                 android:contentDescription="@string/item3_name"
-                app:srcCompat="@drawable/misty_bike" />
+                app:srcCompat="@drawable/misty_bike"
+                android:padding="@dimen/padding"/>
 
 
             <TextView
@@ -49,7 +51,8 @@
                 android:fontFamily="monospace"
                 android:text="@string/item3_price"
                 android:textAlignment="viewStart"
-                android:textSize="30sp" />
+                android:textSize="30sp"
+                android:padding="@dimen/padding"/>
 
             <TextView
                 android:id="@+id/item3_desc"
@@ -58,7 +61,8 @@
                 android:fontFamily="monospace"
                 android:lineSpacingExtra="4sp"
                 android:text="@string/item3_description"
-                android:textAlignment="viewStart" />
+                android:textAlignment="viewStart"
+                android:padding="@dimen/padding"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -73,7 +77,8 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
                     android:text="@string/quantity"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:padding="@dimen/padding"/>
 
                 <Button
                     android:id="@+id/remove_button"
@@ -83,7 +88,8 @@
                     android:fontFamily="monospace"
                     android:text="@string/remove_button"
                     android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:padding="@dimen/padding"/>
 
                 <TextView
                     android:id="@+id/item3_quantity"
@@ -93,7 +99,8 @@
                     android:fontFamily="monospace"
                     android:text="@string/initial_quantity"
                     android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:padding="@dimen/padding"/>
 
                 <Button
                     android:id="@+id/add_button"
@@ -103,7 +110,8 @@
                     android:fontFamily="monospace"
                     android:text="@string/add_button"
                     android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:padding="@dimen/padding"/>
 
             </LinearLayout>
 
@@ -119,13 +127,16 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
                     android:text="@string/subtotal_title"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:padding="@dimen/padding"/>
 
                 <TextView
                     android:id="@+id/initial_subtotal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="#FFEB3B"
                     android:fontFamily="monospace"
+                    android:padding="@dimen/padding"
                     android:text="@string/initial_subtotal"
                     android:textSize="24sp" />
 

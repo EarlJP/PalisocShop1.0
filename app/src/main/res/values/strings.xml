@@ -6,34 +6,32 @@
     <string name="instruct_msg">Welcome to Mike\'s Mach Bikes! Browse through our catalog and order yourself a brand new bike, tailored and delivered, just for you</string>
     <string name="item1_name">Mach Bike 2020</string>
     <string name="item1_price">599.98</string>
-    <string name="item1_description">- 54 Cm Light Aluminum Frame more light for your cycling. \n
+    <string name="item1_description">
+        - 54 Cm Light Aluminum Frame more light for your cycling. \n
         - 16 Speed Shifting system ensure you to brakes for safety at any speed. \n
-        - Double wall Aluminum Rims makes it more fashion. \n
-        - Due to bicycle are overweight products,if there are any damages caused during the shipping,please contact us directly for solve the problems.\n
-        - Bicycle Serials number at the bottom tube or head tube of frame, please find it and make a note ,if the bicycle was stolen, you can provide it to the police. \n
-        - This is sole signs that distinguishes the same serials products.If there any questions,please contact us directly for assistance.</string>
+        - Double wall Aluminum Rims makes it more fashion.
+    </string>
     <string name="item2_name">Acro 7200</string>
     <string name="item2_price">356.98</string>
-    <string name="item2_description">- 21 Speed Shimano Shifting system ensure you to brakes for safety at any speed.\n
-        - Please rotate the fork 180 degree before assemble front wheel, make sure the front brake and the rear brake at same side of the bike.\n
-        - If the brake installed incorrect, the brake and gear system can not works.\n
+    <string name="item2_description">
+        - 21 Speed Shimano Shifting system ensure you to brakes for safety at any speed.\n
         - Dual Disc brake provided great stopping power.\n
-        - Bicycle Serials number at the bottom tube or head tube of frame, please find it and make a note ,if the bicycle was stolen, you can provide it to the police. \n
-        - This is sole signs that distinguishes the same serials products. \n
-        - If there any questions,please contact us directly for assistance. \n
-        - Due to bicycle are overweight products,if there are any damages caused during the shipping,please contact us directly for solve the problems.</string>
-    <string name="quantity">Quantity:  </string>
+        - Excellent off-road flexibility.
+    </string>
+    <string name="quantity">Add to cart:  </string>
     <string name="initial_quantity">  0</string>
     <string name="add_button"> + </string>
     <string name="remove_button"> - </string>
     <string name="item3_name">Misty series 1999</string>
-    <string name="item3_price">555.75</string>
-    <string name="item3_description">- Lightweight hand-built classic diamond steel frame design with an upright riding position designed for urban commuting, leisurely riding, and exercise
+    <string name="item3_price">799.95</string>
+    <string name="item3_description">
+        - Lightweight hand-built classic diamond steel frame design with an upright riding position designed for urban commuting, leisurely riding, and exercise.\n
         - Equipped with Shimano 7-Speed drivetrain and RevoShift twist shifters for ultimate precision, speed, and control. \n
         - Front and rear Linear Pull brakes to keep you safe and in control of your ride at all times. \n
-        - Kenda 700x35C tires grip the ground for a smooth and sure footed ride every time. \n
-        - Arrives 85-Percent built and comes with assembly tools and instructions so you can easily finish putting together your bike.</string>
+        - Kenda 700x35C tires grip the ground for a smooth and sure footed ride every time.
+    </string>
     <string name="shop_heading">RRB</string>
     <string name="subtotal_title">Subtotal: </string>
     <string name="initial_subtotal">-</string>
+    <string name="checkout_heading">Checkout</string>
 </resources>
