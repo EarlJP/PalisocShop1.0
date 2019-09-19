@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">PalisocShop</string>
     <string name="browse_header">Browse</string>
-    <string name="rydel_racing_bikes">Rydel\'s Racing Bikes</string>
+    <string name="shop_title">Rydel\'s \nRacing \nBikes</string>
     <string name="browse">Browse</string>
     <string name="instruct_msg">Welcome to Mike\'s Mach Bikes! Browse through our catalog and order yourself a brand new bike, tailored and delivered, just for you</string>
     <string name="item1_name">Mach Bike 2020</string>
@@ -24,8 +24,8 @@
         - Due to bicycle are overweight products,if there are any damages caused during the shipping,please contact us directly for solve the problems.</string>
     <string name="quantity">Quantity:  </string>
     <string name="initial_quantity">  0</string>
-    <string name="add_button">Button</string>
-    <string name="remove_button">Button</string>
+    <string name="add_button"> + </string>
+    <string name="remove_button"> - </string>
     <string name="item3_name">Misty series 1999</string>
     <string name="item3_price">555.75</string>
     <string name="item3_description">- Lightweight hand-built classic diamond steel frame design with an upright riding position designed for urban commuting, leisurely riding, and exercise
@@ -33,4 +33,7 @@
         - Front and rear Linear Pull brakes to keep you safe and in control of your ride at all times. \n
         - Kenda 700x35C tires grip the ground for a smooth and sure footed ride every time. \n
         - Arrives 85-Percent built and comes with assembly tools and instructions so you can easily finish putting together your bike.</string>
+    <string name="shop_heading">RRB</string>
+    <string name="subtotal_title">Subtotal: </string>
+    <string name="initial_subtotal">-</string>
 </resources>
