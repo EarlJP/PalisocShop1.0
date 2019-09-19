@@ -1,6 +1,5 @@
 <resources>
-    <string name="app_name">PalisocShop</string>
-    <string name="browse_header">Browse</string>
+    <string name="app_name">Palisoc Shop</string>
     <string name="shop_title">Rydel\'s \nRacing \nBikes</string>
     <string name="browse">Browse</string>
     <string name="instruct_msg">Welcome to Mike\'s Mach Bikes! Browse through our catalog and order yourself a brand new bike, tailored and delivered, just for you</string>
@@ -30,8 +29,7 @@
         - Front and rear Linear Pull brakes to keep you safe and in control of your ride at all times. \n
         - Kenda 700x35C tires grip the ground for a smooth and sure footed ride every time.
     </string>
-    <string name="shop_heading">RRB</string>
     <string name="subtotal_title">Subtotal: </string>
     <string name="initial_subtotal">-</string>
-    <string name="checkout_heading">Checkout</string>
+    <string name="checkout_title">Checkout</string>
 </resources>

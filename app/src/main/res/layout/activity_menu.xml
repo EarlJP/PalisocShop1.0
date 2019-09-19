@@ -4,24 +4,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
-    tools:context=".MenuActivity">
+    tools:context=".MenuActivity"
 
-    <TextView
-        android:id="@+id/browse_heading"
+    android:weightSum="12">
+
+
+
+    <LinearLayout
+        android:id="@+id/subtotal_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:background="#F44336"
-        android:padding="@dimen/padding"
-        android:text="@string/browse_header"
-        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
-        android:textColor="@android:color/white"
-        android:textStyle="bold" />
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:id="@+id/subtotal_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/padding"
+            android:text="@string/subtotal_title"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/initial_subtotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding"
+            android:text="@string/initial_subtotal"
+            android:textAlignment="viewEnd"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 
     <ScrollView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/browse_heading">
+        android:layout_below="@id/subtotal_header">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -35,5 +60,24 @@
         </LinearLayout>
 
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/checkout_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F44336"
+            android:padding="@dimen/padding"
+            android:text="@string/checkout_title"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>

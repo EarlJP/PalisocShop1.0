@@ -1,5 +1,6 @@
 package com.earljaepal.palisocshop;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -17,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void launchActivityMenu(View view) {
+        Intent startBrowse = new Intent(this, MenuActivity.class);
+        startActivity(startBrowse);
         Log.d(LOG_TAG, "Launch the browse window");
     }
 }
