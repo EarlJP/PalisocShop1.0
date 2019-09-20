@@ -81,14 +81,15 @@
                     android:textSize="18sp" />
 
                 <Button
-                    android:id="@+id/remove_button"
+                    android:id="@+id/item3_remove"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
                     android:text="@string/remove_button"
                     android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:onClick="removeItem"/>
 
                 <TextView
                     android:id="@+id/item3_quantity"
@@ -101,14 +102,44 @@
                     android:textSize="24sp" />
 
                 <Button
-                    android:id="@+id/add_button"
+                    android:id="@+id/item3_add"
                     style="?android:attr/buttonBarButtonStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
                     android:text="@string/add_button"
                     android:textAlignment="center"
-                    android:textSize="24sp" />
+                    android:textSize="24sp"
+                    android:onClick="addItem"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/subtotal_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/subtotal_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:padding="@dimen/padding"
+                    android:text="@string/total_title"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/initial_subtotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding"
+                    android:text="@string/initial_total"
+                    android:textAlignment="viewEnd"
+                    android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 

@@ -7,7 +7,7 @@
     tools:context=".MenuActivity">
 
     <LinearLayout
-        android:id="@+id/subtotal_header"
+        android:id="@+id/total_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -15,22 +15,22 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/subtotal_title"
+            android:id="@+id/total_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             android:padding="@dimen/padding"
-            android:text="@string/subtotal_title"
+            android:text="@string/total_title"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
             android:textColor="@android:color/white"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/initial_subtotal"
+            android:id="@+id/initial_total"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="@dimen/padding"
-            android:text="@string/initial_subtotal"
+            android:text="@string/initial_total"
             android:textAlignment="viewEnd"
             android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
             android:textColor="@android:color/white"
@@ -43,7 +43,7 @@
         android:id="@+id/main_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/subtotal_header">
+        android:layout_below="@id/total_header">
 
         <LinearLayout
             android:layout_width="wrap_content"
