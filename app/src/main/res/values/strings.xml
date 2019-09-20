@@ -29,6 +29,8 @@
         - Front and rear Linear Pull brakes to keep you safe and in control of your ride at all times. \n
         - Kenda 700x35C tires grip the ground for a smooth and sure footed ride every time.
     </string>
+    <string name="subtotal_title">Subtotal: </string>
+    <string name="initial_subtotal"> 0</string>
     <string name="total_title">Total: </string>
     <string name="initial_total"> 0</string>
     <string name="checkout_title">Checkout</string>

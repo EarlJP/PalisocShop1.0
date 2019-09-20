@@ -16,21 +16,30 @@ public class MenuActivity extends AppCompatActivity {
 
     private static final String LOG_TAG =
             MenuActivity.class.getSimpleName();
+
+    public static final String EXTRA_MESSAGE =
+            "com.earljaepal.palisocshop.extra.MESSAGE";
+
     private static final String NO_ITEMS = "Sorry, this item is not in your cart!";
 
     private int quantityCount = 0;
-    private double subtotal = 0;
-    private double total = 0;
+    private TextView finalTotal; 
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        finalTotal = findViewById(R.id.total);
+
     }
 
     public void launchCheckoutMenu(View view) {
         Intent checkout = new Intent(this, CheckoutActivity.class);
+        String stringTotal = finalTotal.toString();
+        checkout.putExtra(EXTRA_MESSAGE, stringTotal);
+
         startActivity(checkout);
         Log.d(LOG_TAG, "Proceed to checkout");
     }
@@ -48,12 +57,12 @@ public class MenuActivity extends AppCompatActivity {
             // Display the new quantity
             displayQuantity.setText(Integer.toString(quantityCount));
 
+            // Update the subtotal depending on the new quantity
             updateSubtotal((ViewGroup) quantityView.getParent(), quantityCount);
-            subtractTotal((ViewGroup) quantityView.getParent(), subtotal);
         }
-        else {
+        else
+            // Send a popup message if the quantity is already zero
             Toast.makeText(this, NO_ITEMS, Toast.LENGTH_SHORT).show();
-        }
     }
 
     public void addItem(View view) {
@@ -68,56 +77,42 @@ public class MenuActivity extends AppCompatActivity {
         // Display the new quantity
         displayQuantity.setText(Integer.toString(quantityCount));
 
+        // Update the subtotal depending on the new quantity
         updateSubtotal((ViewGroup) quantityView.getParent(), quantityCount);
-        addTotal((ViewGroup) quantityView.getParent(), subtotal);
     }
 
     public void updateSubtotal(ViewGroup view, int quantity) {
+        // Extract the appropriate view
         ViewGroup subtotalView = (ViewGroup) view.getChildAt(5);
         TextView displaySubtotal = (TextView) subtotalView.getChildAt(1);
 
+        // Get the price from the appropriate view
         TextView price = getPrice(view);
 
-        subtotal = Double.parseDouble(price.getText().toString());
+        // Extract the subtotal TextView and make the calculations
+        double subtotal = Double.parseDouble(price.getText().toString());
         subtotal *= quantity;
 
-        displaySubtotal.setText(Double.toString(subtotal));
+        displaySubtotal.setText(String.format("%.2f", subtotal));
+        updateTotal();
     }
 
     public TextView getPrice(ViewGroup view) {
         return (TextView) view.getChildAt(2);
     }
 
-    public void addTotal(ViewGroup view, double subtotal) {
-        // Extract the current total and calculate the changes
-        TextView displayTotal = getTotal(view);
-        total = Double.parseDouble(displayTotal.getText().toString());
+    public void updateTotal() {
+        // Extract the subtotals of each item
+        TextView subtotal_1 = findViewById(R.id.initial_subtotal1);
+        TextView subtotal_2 = findViewById(R.id.initial_subtotal2);
+        TextView subtotal_3 = findViewById(R.id.initial_subtotal3);
 
-        total += subtotal;
+        // Add all the current subtotals
+        double currentTotal = Double.parseDouble(subtotal_1.getText().toString());
+        currentTotal += Double.parseDouble(subtotal_2.getText().toString());
+        currentTotal += Double.parseDouble(subtotal_3.getText().toString());
 
-        displayTotal.setText(Double.toString(total));
-
-    }
-
-    public void subtractTotal (ViewGroup view, double subtotal) {
-        // Extract the current total and calculate the changes
-        TextView displayTotal = getTotal(view);
-        total = Double.parseDouble(displayTotal.getText().toString());
-
-        total -= subtotal;
-
-        displayTotal.setText(Double.toString(total));
-    }
-
-    public TextView getTotal(ViewGroup view) {
-        // Move all the way to the view containing the total TextViews
-        ViewGroup cardParent = (ViewGroup) view.getParent();
-        ViewGroup allCardsParent = (ViewGroup) cardParent.getParent();
-        ViewGroup scrollViewParent = (ViewGroup) allCardsParent.getParent();
-        ViewGroup menuViewParent = (ViewGroup) scrollViewParent.getParent();
-        ViewGroup totalView = (ViewGroup) menuViewParent.getChildAt(0);
-
-        // Extract the current total
-        return (TextView) totalView.getChildAt(1);
+        // Set the new subtotal
+        ((TextView) findViewById(R.id.total)).setText(String.format("$ %.2f", currentTotal));
     }
 }

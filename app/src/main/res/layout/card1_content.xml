@@ -117,7 +117,6 @@
                 android:id="@+id/subtotal_header"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
                 android:orientation="horizontal">
 
                 <TextView
@@ -126,16 +125,16 @@
                     android:layout_height="wrap_content"
                     android:gravity="center_horizontal"
                     android:padding="@dimen/padding"
-                    android:text="@string/total_title"
+                    android:text="@string/subtotal_title"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/initial_subtotal"
+                    android:id="@+id/initial_subtotal1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="@dimen/padding"
-                    android:text="@string/initial_total"
+                    android:text="@string/initial_subtotal"
                     android:textAlignment="viewEnd"
                     android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
                     android:textStyle="bold" />
