@@ -35,7 +35,8 @@
     <string name="initial_total"> 0</string>
     <string name="checkout_title">Checkout</string>
     <string name="pretotal">Total before taxes:</string>
-    <string name="tps">TPS</string>
-    <string name="tvq">TVQ</string>
+    <string name="tps">TPS:</string>
+    <string name="tvq">TVQ:</string>
     <string name="total">Total:</string>
+    <string name="end_message">Thank you for shopping at Rydel\'s Racing Bikes!</string>
 </resources>

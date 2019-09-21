@@ -37,7 +37,7 @@ public class MenuActivity extends AppCompatActivity {
 
     public void launchCheckoutMenu(View view) {
         Intent checkout = new Intent(this, CheckoutActivity.class);
-        String stringTotal = finalTotal.toString();
+        String stringTotal = finalTotal.getText().toString();
         checkout.putExtra(EXTRA_MESSAGE, stringTotal);
 
         startActivity(checkout);
@@ -113,6 +113,6 @@ public class MenuActivity extends AppCompatActivity {
         currentTotal += Double.parseDouble(subtotal_3.getText().toString());
 
         // Set the new subtotal
-        ((TextView) findViewById(R.id.total)).setText(String.format("$ %.2f", currentTotal));
+        ((TextView) findViewById(R.id.total)).setText(String.format("$%.2f", currentTotal));
     }
 }

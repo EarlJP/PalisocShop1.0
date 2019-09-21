@@ -106,10 +106,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
+                    android:onClick="addItem"
                     android:text="@string/add_button"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:onClick="addItem"/>
+                    android:textSize="24sp" />
 
             </LinearLayout>
 

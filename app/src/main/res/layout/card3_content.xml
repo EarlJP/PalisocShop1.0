@@ -39,8 +39,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="191dp"
                 android:contentDescription="@string/item3_name"
-                app:srcCompat="@drawable/misty_bike"
-                android:padding="@dimen/padding"/>
+                android:padding="@dimen/padding"
+                app:srcCompat="@drawable/misty_bike" />
 
 
             <TextView
@@ -49,10 +49,10 @@
                 android:layout_height="wrap_content"
                 android:background="#FFEB3B"
                 android:fontFamily="monospace"
+                android:padding="@dimen/padding"
                 android:text="@string/item3_price"
                 android:textAlignment="viewStart"
-                android:textSize="30sp"
-                android:padding="@dimen/padding"/>
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/item3_desc"
@@ -60,9 +60,9 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="monospace"
                 android:lineSpacingExtra="4sp"
+                android:padding="@dimen/padding"
                 android:text="@string/item3_description"
-                android:textAlignment="viewStart"
-                android:padding="@dimen/padding"/>
+                android:textAlignment="viewStart" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -86,10 +86,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
+                    android:onClick="removeItem"
                     android:text="@string/remove_button"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:onClick="removeItem"/>
+                    android:textSize="24sp" />
 
                 <TextView
                     android:id="@+id/item3_quantity"
@@ -107,10 +107,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="monospace"
+                    android:onClick="addItem"
                     android:text="@string/add_button"
                     android:textAlignment="center"
-                    android:textSize="24sp"
-                    android:onClick="addItem"/>
+                    android:textSize="24sp" />
 
             </LinearLayout>
 

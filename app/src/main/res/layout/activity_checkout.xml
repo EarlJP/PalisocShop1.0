@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,14 +16,13 @@
         android:textAlignment="viewStart"
         android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
         android:textColor="@android:color/white"
+        android:textSize="24sp"
         android:textStyle="bold" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/checkout_heading"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="0dp"
         android:gravity="center_horizontal">
 
         <TableRow
@@ -37,14 +35,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/pretotal" />
+                android:text="@string/pretotal"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/pretotal"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textAlignment="viewEnd" />
+                android:textAlignment="viewEnd"
+                android:textSize="18sp" />
 
         </TableRow>
 
@@ -58,15 +58,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/tps" />
+                android:text="@string/tps"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tps"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/add_button"
-                android:textAlignment="viewEnd" />
+                android:textAlignment="viewEnd"
+                android:textSize="18sp" />
 
         </TableRow>
 
@@ -80,15 +81,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/tvq" />
+                android:text="@string/tvq"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tvq"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/add_button"
-                android:textAlignment="viewEnd" />
+                android:textAlignment="viewEnd"
+                android:textSize="18sp" />
 
         </TableRow>
 
@@ -102,16 +104,33 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:text="@string/total" />
+                android:text="@string/total"
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/total"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textAlignment="viewEnd" />
+                android:text=""
+                android:textAlignment="viewEnd"
+                android:textSize="18sp" />
 
         </TableRow>
 
     </TableLayout>
+
+    <TextView
+        android:id="@+id/end_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="true"
+        android:fontFamily="monospace"
+        android:text="@string/end_message"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="36sp"
+        android:textStyle="bold|italic" />
+
 </RelativeLayout>
