@@ -1,5 +1,5 @@
 # PalisocShop
-Assignment 1
+Assignment 1 - Graphical and Wireless Programming Section 2 
 
 ## Description
 This project is essentially a shopping cart app that allows the user to browse a catalog of items. They are capable of adding
@@ -15,7 +15,7 @@ one or more items to their cart and can then see the calculated total after taxe
 
 The description of each bike was also taken from its respective amazon.ca information 
 
-##Emulator
+## Emulator
 
 This application will support Nexus 5X API 28 x86 (Android 9, API 28) 
 
