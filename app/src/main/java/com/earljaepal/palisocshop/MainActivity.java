@@ -11,12 +11,20 @@ public class MainActivity extends AppCompatActivity {
     private static final String LOG_TAG =
             MainActivity.class.getSimpleName();
 
+    /**
+     * Creates the Main Activity
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
+    /**
+     * Launched the Menu Activity
+     * @param view
+     */
     public void launchActivityMenu(View view) {
         Intent startBrowse = new Intent(this, MenuActivity.class);
         startActivity(startBrowse);
